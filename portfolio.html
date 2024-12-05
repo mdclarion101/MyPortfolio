@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Maricar Clarion | Portfolio</title>
+    <script src="webpage.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav_content">
+            <div class="profile_container">
+                <img src="Images/logo.jfif" alt="Small profile" class="small_profile">
+            </div>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section">
+        <h2 class="portfolio-title">My Works</h2>
+        <div class="section_container">
+            <div class="layout-box">
+                <a href="https://www.canva.com/design/DAF7pgl7ZkY/Ep8q8yLEWBrOhsEaprah2A/edit" class="portfolio-link" onclick="showPortfolio(event, 'Layout')">
+                    <div class="portfolio-image">
+                        <img src="Images/layout.png" alt="Layouts">
+                    </div>
+                    <p class="portfolio-caption">Layouts</p>
+                </a>
+            </div>
+            
+            <div class="photography-box">
+                <a href="https://www.canva.com/design/DAF7pgl7ZkY/Ep8q8yLEWBrOhsEaprah2A/edit" class="portfolio-link" onclick="showPortfolio(event, 'Photography')">
+                    <div class="portfolio-image">
+                        <img src="Images/photography.jpg" alt="Photography">
+                    </div>
+                    <p class="portfolio-caption">Photography</p>
+                </a>
+            </div>
+            
+            <div class="bookkeeping-box">
+                <a href="https://www.canva.com/design/DAF7pgl7ZkY/Ep8q8yLEWBrOhsEaprah2A/edit" class="portfolio-link" onclick="showPortfolio(event, 'Bookkeeping')">
+                    <div class="portfolio-image">
+                        <img src="Images/bookkeeping.png" alt="Bookkeeping">
+                    </div>
+                    <p class="portfolio-caption">Bookkeeping</p>
+                </a>
+            </div>            
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <p id="modal-message">You will now be directed to Canva. Please wait</p>
+                <p id="countdown">3</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
